@@ -137,7 +137,7 @@ export default function Contact() {
                           setFormData({ ...formData, name: e.target.value })
                         }
                         placeholder="e.g. Alex Mercer"
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                       />
                     </div>
 
@@ -157,7 +157,7 @@ export default function Contact() {
                           setFormData({ ...formData, email: e.target.value })
                         }
                         placeholder="alex@company.com"
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                       />
                     </div>
                   </div>
@@ -178,7 +178,7 @@ export default function Contact() {
                           setFormData({ ...formData, phone: e.target.value })
                         }
                         placeholder="+1 (555) 000-0000"
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                       />
                     </div>
 
@@ -197,7 +197,7 @@ export default function Contact() {
                           setFormData({ ...formData, company: e.target.value })
                         }
                         placeholder="e.g. Acme Tech"
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                       />
                     </div>
                   </div>
@@ -216,7 +216,7 @@ export default function Contact() {
                         onChange={(e) =>
                           setFormData({ ...formData, service: e.target.value })
                         }
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                       >
                         {servicesData.map((svc) => (
                           <option key={svc.slug} value={svc.slug}>
@@ -239,7 +239,7 @@ export default function Contact() {
                         onChange={(e) =>
                           setFormData({ ...formData, budget: e.target.value })
                         }
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                       >
                         <option value="Under $5,000">Under $5,000 (Small Project)</option>
                         <option value="$5,000 - $15,000">$5,000 – $15,000 (Growth)</option>
@@ -266,7 +266,7 @@ export default function Contact() {
                         setFormData({ ...formData, message: e.target.value })
                       }
                       placeholder="Tell us about your technical goals, existing stack (AWS, GCP, WordPress, etc.), and desired launch target..."
-                      className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                     ></textarea>
                   </div>
 

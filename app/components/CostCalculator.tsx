@@ -132,7 +132,7 @@ export function CostCalculator() {
             <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 mb-2">
               2. Business Stage & Scale
             </label>
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               {[
                 { id: "startup", title: "Startup / Small", desc: "Agile & Lean" },
                 { id: "growth", title: "Growth / Mid-Size", desc: "Rapid Scaling" },
