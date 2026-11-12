@@ -31,7 +31,8 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#2563eb" />
-        <link rel="icon" href="/images/logo.jpg" type="image/jpeg" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="alternate icon" href="/images/logo.jpg" type="image/jpeg" />
         <Meta />
         <Links />
       </head>

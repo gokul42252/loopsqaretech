@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from "react";
+import { useState, useEffect, type FormEvent } from "react";
 import { useSearchParams } from "react-router";
 import { companyInfo } from "~/content/company";
 import { servicesData } from "~/content/services";
@@ -26,17 +26,24 @@ export function meta() {
 
 export default function Contact() {
   const [searchParams] = useSearchParams();
-  const preselectedService = searchParams.get("service") || "cloud-solutions";
+  const serviceParam = searchParams.get("service");
 
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     company: "",
-    service: preselectedService,
+    service: serviceParam || "cloud-solutions",
     budget: "$5,000 - $15,000",
     message: "",
   });
+
+  // Keep form in sync if query params change
+  useEffect(() => {
+    if (serviceParam && servicesData.some((s) => s.slug === serviceParam)) {
+      setFormData((prev) => ({ ...prev, service: serviceParam }));
+    }
+  }, [serviceParam]);
 
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);

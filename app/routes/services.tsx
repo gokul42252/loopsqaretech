@@ -308,6 +308,9 @@ export default function Services() {
             </p>
           </div>
 
+          <div className="sm:hidden text-[11px] text-center font-medium text-slate-500 dark:text-slate-400 mb-3 bg-slate-100 dark:bg-slate-800 py-1.5 px-3 rounded-lg">
+            ← Swipe horizontally to explore full matrix →
+          </div>
           <div className="overflow-x-auto bg-white dark:bg-slate-900 rounded-2xl shadow-md border border-slate-200 dark:border-slate-800">
             <table className="w-full text-left border-collapse text-xs sm:text-sm">
               <thead>

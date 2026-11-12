@@ -92,7 +92,7 @@ export function ServiceCard({ service, featured = false }: ServiceCardProps) {
 
         {/* Key Features Bullet List */}
         <div className="mt-auto pt-4 border-t border-slate-100 dark:border-slate-800/80">
-          <div className="text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-2.5">
+          <div className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2.5">
             Key Highlights
           </div>
           <ul className="space-y-2 mb-6">

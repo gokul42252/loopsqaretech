@@ -78,17 +78,18 @@ export function Welcome() {
               </Link>
             </div>
 
-            {/* Official Logo Banner Preview */}
-            <div className="relative mx-auto max-w-xl p-3 rounded-2xl bg-white/95 dark:bg-slate-900/90 shadow-2xl border border-white/20 backdrop-blur-md">
-              <div className="flex items-center justify-center py-2 px-4">
+            {/* Official Logo Banner Card */}
+            <div className="relative mx-auto max-w-lg p-3 sm:p-4 rounded-2xl bg-white shadow-2xl border border-white/30 backdrop-blur-md text-slate-900">
+              <div className="flex items-center justify-center py-1 sm:py-2 px-4">
                 <img
                   src="/images/logo.jpg"
-                  alt="Loopsquare Tech"
-                  className="h-14 sm:h-16 w-auto object-contain"
+                  alt="Loopsquare Tech - Ideas Into Intelligent Solutions"
+                  className="h-12 sm:h-14 w-auto object-contain"
                 />
               </div>
-              <div className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 tracking-wide uppercase border-t border-slate-100 dark:border-slate-800 pt-2 mt-1">
-                Certified Cloud Architects & Modern Full-Stack Engineers
+              <div className="text-[11px] font-bold text-slate-500 tracking-wider uppercase border-t border-slate-100 pt-2 mt-1 flex items-center justify-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                <span>Certified Cloud Architects & Modern Full-Stack Engineers</span>
               </div>
             </div>
           </div>
