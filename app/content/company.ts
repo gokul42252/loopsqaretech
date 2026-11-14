@@ -79,17 +79,17 @@ export const companyInfo = {
   contact: {
     email: "contact@loopsquaretech.com",
     supportEmail: "support@loopsquaretech.com",
-    phone: "+1 (800) 587-7727",
-    intlPhone: "+1 (555) 349-2810",
+    phone: "+91 83049 85924",
+    phoneRaw: "+918304985924",
     address: {
-      line1: "Loopsquare Tech Headquarters",
-      line2: "100 Tech Innovation Boulevard, Suite 500",
-      city: "Austin",
-      state: "TX",
-      zip: "78701",
-      country: "United States",
+      line1: "Loopsquare Tech",
+      line2: "Thrippunithura",
+      city: "Kochi",
+      state: "Kerala",
+      zip: "682301",
+      country: "India",
     },
-    hours: "Monday – Friday: 8:00 AM – 6:00 PM CST (24/7 Emergency Cloud Response)",
+    hours: "Monday – Saturday: 9:00 AM – 7:00 PM IST (24/7 Dedicated Support)",
   },
 
   socials: {

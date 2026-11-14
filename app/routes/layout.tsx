@@ -91,7 +91,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
               {companyInfo.contact.email}
             </a>
             <a
-              href="tel:+18005877727"
+              href={`tel:${companyInfo.contact.phoneRaw}`}
               className="flex items-center gap-1.5 hover:text-cyan-200 transition-colors"
             >
               <Phone className="w-3.5 h-3.5" />
@@ -451,8 +451,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <li className="flex items-start gap-2.5">
                   <MapPin className="w-4 h-4 text-blue-400 mt-1 flex-shrink-0" />
                   <span>
-                    Austin, TX 78701<br />
-                    United States
+                    {companyInfo.contact.address.line2}<br />
+                    {companyInfo.contact.address.city}, {companyInfo.contact.address.state} - {companyInfo.contact.address.zip}
                   </span>
                 </li>
                 <li className="flex items-center gap-2.5">
@@ -461,16 +461,16 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     href="mailto:contact@loopsquaretech.com"
                     className="hover:text-white transition-colors"
                   >
-                    contact@loopsquaretech.com
+                    {companyInfo.contact.email}
                   </a>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <Phone className="w-4 h-4 text-blue-400 flex-shrink-0" />
                   <a
-                    href="tel:+18005877727"
+                    href={`tel:${companyInfo.contact.phoneRaw}`}
                     className="hover:text-white transition-colors"
                   >
-                    +1 (800) 587-7727
+                    {companyInfo.contact.phone}
                   </a>
                 </li>
               </ul>

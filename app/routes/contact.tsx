@@ -184,7 +184,7 @@ export default function Contact() {
                         onChange={(e) =>
                           setFormData({ ...formData, phone: e.target.value })
                         }
-                        placeholder="+1 (555) 000-0000"
+                        placeholder="+91 83049 85924"
                         className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                       />
                     </div>
@@ -333,12 +333,12 @@ export default function Contact() {
                   <div>
                     <div className="text-xs uppercase font-bold text-slate-400">Call Us</div>
                     <a
-                      href="tel:+18005877727"
+                      href={`tel:${companyInfo.contact.phoneRaw}`}
                       className="text-sm font-semibold text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                     >
                       {companyInfo.contact.phone}
                     </a>
-                    <div className="text-xs text-slate-500">Toll-Free Architecture Line</div>
+                    <div className="text-xs text-slate-500">Direct Engineering Line</div>
                   </div>
                 </div>
 
@@ -352,7 +352,7 @@ export default function Contact() {
                       {companyInfo.contact.address.line2}
                     </p>
                     <p className="text-xs text-slate-500">
-                      {companyInfo.contact.address.city}, {companyInfo.contact.address.state} {companyInfo.contact.address.zip}
+                      {companyInfo.contact.address.city}, {companyInfo.contact.address.state} - {companyInfo.contact.address.zip}
                     </p>
                   </div>
                 </div>
